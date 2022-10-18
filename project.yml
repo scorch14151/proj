@@ -5,5 +5,8 @@
   user: ansible
 
   tasks:
-    - name: creating a file
-      command: touch tes.yml
+    - name: installing httpd
+      command: yum install httpd -y
+
+    - name: restarting httpd
+      service: name=httpd state=restarted
