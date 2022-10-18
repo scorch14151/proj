@@ -5,5 +5,5 @@
   user: ansible
 
   tasks:
-    - name: installing maven
-      command: yum install maven -y
+    - name: creating a file
+      command: touch tes.yml
