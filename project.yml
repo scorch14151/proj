@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  become: yes
+  connection: ssh
+  user: ansible
+
+  tasks:
+    - name: installing maven
+      command: yum install maven -y
